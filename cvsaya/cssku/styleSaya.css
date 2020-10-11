@@ -1,0 +1,249 @@
+* {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+/*untuk Tulis kode berikut untuk menerapkan background pada seluruh body web*/
+
+body {
+    background-color: white;
+}
+
+/* Untuk membuat navbar selalu tetap di atas meskipun web sudah di-scroll,
+tambahkan kode ini diatas code li{} :*/
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+/* Untuk membuat semua teks pada navbar berwarna putih, tambahkan kode ini :*/
+
+.nav {
+    background-color: black;
+    padding: 50px;
+    text-align: center;
+    color: white;
+
+}
+
+nav {}
+
+li {
+    float: left;
+}
+
+/* untuk memposisikan list berada di kiri dan memiliki warna font berwarna
+hitam.*/
+
+
+/*untuk mengatur link pada navigasi, pada mulanya tulisan link berwarna biru,
+    namun disetel menjadi putih dengan menyertakan property color dengan value
+    white*/
+
+li a {
+    display: block;
+    color: white;
+    height: auto;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*untuk menampilkan efek sedang berada di sekitar link*/
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+/* untuk menampilkan halaman yang aktif */
+
+li a.active {
+    color: white;
+    background-color: #72ab00;
+}
+
+/*kode ini mengatur menengahkan semua elemen yang ada pada header,
+memberikan warna background, mengatur warna font yang ada pada header,
+dan lain-lain*/
+.header {
+    background-color: #f8f8f8;
+    padding: 50px;
+    text-align: center;
+
+    color: black;
+    max-width: 100%;
+    margin: auto;
+}
+
+/* Untuk mengatur tampilan link facebook, Instagram, twitter, dan linkedin, tulis
+kode berikut :*/
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: white;
+    color: #3B5998;
+}
+
+.fa-twitter {
+    background: white;
+    color: #55ACEE;
+}
+
+.fa-google {
+    background: white;
+    color: #dd4b39;
+}
+
+.fa-linkedin {
+    background: white;
+    color: #007bb5;
+}
+
+/*Tambahkan style pada gambar supaya bentuknya menjadi lingkaran. Tulis kode
+berikut pada file CSS :*/
+
+img {
+    border-radius: 50%;
+    width: 250px;
+}
+
+h1 {
+    color: #72ab00;
+}
+
+h2,
+h3,
+h4 {
+    color: #72ab00;
+    font-weight: lighter;
+    padding-bottom: 0%;
+}
+
+/* Untuk mengatur tampilan pada tabel konten ( yang isinya adalah professional
+information, work experience, education, language, dan skills), tulislah kode
+berikut pada file CSS : */
+
+#konten {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#konten td,
+#konten th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#konten tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#konten th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* menambahkan style pada headning 5 */
+h5 {
+    color: black;
+    font-weight: lighter;
+}
+
+/*Pada gambar di atas, dapat dilihat bahwa <h5> menjadi lebih tipis dibandingkan
+yang sebelumnya. Width digunakan untuk mengatur lebar dari sidebar. Untuk
+mengatur sidebar supaya tidak terlalu tipis, gunakan kode berikut :*/
+.sidebar {
+    display: inline-block;
+    vertical-align: text-top;
+    width: 200px;
+    margin-top: 0px;
+}
+
+/*mengatur style pada kolom input*/
+input[type=text],
+select,
+textarea {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+/* Mengatur label-label pada formulir*/
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+/*mengatur tampilan tombol entah itu dari warna background, warna teks,
+border, posisi, dan lain-lain */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+/*mengatur tampilan tombol saat mouse diarahkan ke sana*/
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/*mengatur form dari tampilan background, padding, margin, dan sudut-sudut
+border*/
+.container {
+    border-radius: 0px 0px 15px 15px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: auto;
+}
+
+/*mengatur pembagian luasan kolom untuk label dan input formulir*/
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Untuk mengatur footer supaya lebih beraturan, tambahkan kode di bawah ini pada
+file CSS :*/
+footer {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
